@@ -1,0 +1,2 @@
+node_modules
+# aca le decimos a git que ingore los node modeules por que son muy pesados
