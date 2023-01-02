@@ -1,2 +1,4 @@
-node_modules
+/node_modules
 # aca le decimos a git que ingore los node modeules por que son muy pesados
+.env
+# le decimos a git que ingnore el .env ya que alli tenemos datos sensibles y por segurida no debemos mostrarlos pblicamente, alli los datos son el puerto y la contraseña y el usuario para acedder a la data base

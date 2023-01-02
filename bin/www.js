@@ -43,6 +43,7 @@ let server = http.createServer(app);
 
 server.listen(port, () => console.log(port));
 // le agregamos un escuchador de eventos al server creado en el paso anterior, ese proceso de creación dispone de ciertos tipos de eventos, entonces vamos a escuchar los errores  y mientras que el servidor escucha el puerto en buena confección, entonces si hay algún error  va a ejecutar server.on error y si escucha la buena concesión va a ejecutar server.on listening. mientras que esto ultimo pase va a ejecutar la función onListening, y si escucha el error ejecuta la función onError.
+// Lo que esta como segundo parámetro simplemente se lo agregamos para que si el puerto esta andando bien devuelva el numero del puerto al usuario.
 
 server.on('error', onError);
 server.on('listening', onListening);
