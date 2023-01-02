@@ -23,6 +23,9 @@ import usersRouter from './routes/users.js';
 import {__dirname} from './utils.js'
 // aca se importa con llaves por que en utils.js si nos fijamos estamos exportando dos cosas en un mismo objeto, as i que cuando pasa esto usamos llaves. esto es desestructurar la variable 
 
+import 'dotenv/config.js'
+// importamos el dot env, que nos permite leer las variables de entorno del archivo .env que nos trae la base de datos
+
 let app = express();
 // instainiciar express que esta en la linea 8 
 
